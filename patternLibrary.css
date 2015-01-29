@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* color sample */
+body {
+    font-family: sans-serif;
+}
+
+.swatch {
+    padding: 1em;
+    background-color: black;
+    width:4em;
+    height: 2em;
+    color: #fff;
+}
+
+.mainBlue {
+    background-color: #1e2a44;
+}
+
+.secondaryBlue {
+    background-color: #1c305d;
+}
+
+.mainGrey {
+    background-color: #b3b1aa;
+}
+
+.secondaryGrey {
+    background-color: #cac9c9;
+}
+
+.creme {
+    background-color: #f6f3ea;
+}
