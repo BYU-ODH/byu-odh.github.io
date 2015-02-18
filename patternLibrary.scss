@@ -14,7 +14,12 @@ body {
     padding: 1em;
     height: 2em;
     color: #fff;
-    width:10em;
+    width:100%;
+    display: inline-table;
+}
+
+.description {
+    padding: .5em; 
 }
 
 .mainBlue {
@@ -41,8 +46,8 @@ body {
     background-color: $mainGreyHL;
 }
 
-.secondaryGrey {
-    background-color: $secondaryGrey;
+.disabledGrey {
+    background-color: $disabledGrey;
 }
 
 .creme {
@@ -59,8 +64,12 @@ button {
     transition-background: all 1s;
 }
 
+button:hover {
+    box-shadow: inset 0 0 15px #444;
+    cursor: pointer; 
+}
 .mainBtn {
-    background: $gradDark;
+    background: $gradBlue;
 }
 
 .mainBtn:hover {
@@ -68,9 +77,34 @@ button {
 }
 
 .secondaryBtn {
-    background-color: $mainGrey;
+    background: $gradGrey;
 }
 
 .secondaryBtn:hover {
-    background-color: $mainGreyHL;
+    background: $mainGreyHL;
+}
+
+.greenBtn {
+    background: $gradGreen;
+}
+
+.greenBtn:hover {
+    background: $greenHL;
+}
+
+.redBtn {
+    background: $gradRed;
+}
+
+.redBtn:hover {
+    background: $redHL;
+}
+
+.disabledBtn {
+    background-color: $disabledGrey;
+}
+
+button.disabledBtn:hover {
+    box-shadow: none;
+    cursor: default;
 }

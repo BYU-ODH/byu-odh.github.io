@@ -10,15 +10,29 @@ $byuBlueHL: #3e5d90;
 
 $mainGrey: #757474;
 
-$mainGreyHL: #cac9c9;
+$mainGreyHL: #b3b1aa;
 
-$secondaryGrey: #b3b1aa;
+$disabledGrey: #cac9c9;
 
 $creme: #f6f3ea;
 
 $white: #fff;
 
-$gradDark: linear-gradient(#5A6377, #1e2a44, #5A6377);
+$green: #7acc29;
+
+$greenHL: #a2db69;
+
+$red: #af2527;
+
+$redHL: #bf5152;
+
+$gradBlue: linear-gradient(#3e5d90, #1e2a44, #3e5d90);
+
+$gradGrey: linear-gradient(#b3b1aa, #757474, #b3b1aa);
+
+$gradGreen: linear-gradient(#caeba9, #7acc29, #caeba9);
+
+$gradRed: linear-gradient(#cf7c7d, #af2527, #cf7c7d);
 
 .mainText {
 	color: $byuBlue;
