@@ -1,35 +1,107 @@
-@charset "utf-8";
-/* CSS Document */
+.mainText {
+  color: #1c305d;
+  font-family: sans-serif; }
 
+/* CSS Document */
 /* color sample */
 body {
-    font-family: sans-serif;
-}
+  font-family: sans-serif;
+  color: #555; }
 
 .swatch {
-    padding: 1em;
-    background-color: black;
-    width:4em;
-    height: 2em;
-    color: #fff;
-}
+  padding: 1em;
+  height: 2em;
+  color: #fff;
+  width: 100%;
+  display: inline-table; }
+
+.description {
+  padding: .5em; }
 
 .mainBlue {
-    background-color: #1e2a44;
-}
+  background-color: #1e2a44; }
 
-.secondaryBlue {
-    background-color: #1c305d;
-}
+.mainBlueHL {
+  background-color: #697890; }
+
+.byuBlue {
+  background-color: #1c305d; }
+
+.byuBlueHL {
+  background-color: #3e5d90; }
 
 .mainGrey {
-    background-color: #b3b1aa;
-}
+  background-color: #757474; }
 
-.secondaryGrey {
-    background-color: #cac9c9;
-}
+.mainGreyHL {
+  background-color: #b3b1aa; }
 
 .creme {
-    background-color: #f6f3ea;
-}
+  background-color: #f6f3ea;
+  color: #555; }
+
+.disabledGrey {
+  background-color: #cac9c9; }
+
+button {
+  padding: 1em;
+  border: 0;
+  border-radius: .5em;
+  color: #fff;
+  font-size: 1em; }
+
+button:hover {
+  box-shadow: inset 0 0 15px #444;
+  cursor: pointer; }
+
+.buzzLightyear {
+  position: absolute;
+  -webkit-animation: chaos 5s infinite; }
+
+.mainBtn {
+  background: linear-gradient(#3e5d90, #1e2a44, #3e5d90);
+  background-color: #1e2a44; }
+
+.mainBtn:hover {
+  background: #3e5d90; }
+
+.secondaryBtn {
+  background: linear-gradient(#b3b1aa, #757474, #b3b1aa); }
+
+.secondaryBtn:hover {
+  background: #b3b1aa; }
+
+.redBtn {
+  background: linear-gradient(#CF7C7D, #af2527, #CF7C7D); }
+
+.redBtn:hover {
+  background: #BF5152; }
+
+.greenBtn {
+  background: linear-gradient(#CAEBA9, #7ACC29, #CAEBA9); }
+
+.greenBtn:hover {
+  background: #A2DB69; }
+
+.disabledBtn {
+  background-color: #cac9c9; }
+
+.disabledBtn:hover {
+  box-shadow: none;
+  cursor: default; }
+
+@-webkit-keyframes chaos {
+  0% {
+    left: 0px;
+    top: 0px; }
+  25% {
+    left: 200px;
+    top: 10px; }
+  50% {
+    left: 450px;
+    top: 50px; }
+  75% {
+    left: 120px;
+    top: 300px; } }
+
+/*# sourceMappingURL=patternLibrary.css.map */

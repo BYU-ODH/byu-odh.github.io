@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+$mainBlue: #1e2a44;
+
+$mainBlueHL: #697890;
+
+$byuBlue: #1c305d;
+
+$byuBlueHL: #3e5d90;
+
+$mainGrey: #757474;
+
+$mainGreyHL: #cac9c9;
+
+$secondaryGrey: #b3b1aa;
+
+$creme: #f6f3ea;
+
+$white: #fff;
+
+$gradDark: linear-gradient(#5A6377, #1e2a44, #5A6377);
+
+.mainText {
+	color: $byuBlue;
+    font-family: sans-serif;
+}

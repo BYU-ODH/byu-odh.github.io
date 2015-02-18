@@ -3,14 +3,78 @@
     <meta charset="utf-8">
     <title>Pattern Library</title>
     <link rel="stylesheet" type="text/css" href="patternLibrary.css" />
+    <link rel="stylesheet" type="text/css" href="simplegrid.css" />
     <body>
-        <div class="swatch mainBlue">#1e2a44</div>
-        <div class="swatch secondaryBlue">#1c305d</div>
-        <div class="swatch mainGrey">#b3b1aa</div>
-        <div class="swatch secondaryGrey">#cac9c9</div>
-        <div class="swatch creme">#f6f3ea</div>
+        <div class="grid">
+            <div class="col-1-3">
+                <div class="swatch mainBlue"> mainBlue <br /> #1e2a4 
+                </div>
+            </div>
+            <div class="col-2-3">
+                <div class="description">Primary color to be used in large blocks (i.e. navigation, dividing elements, menus, etc.)</div>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col-1-3">
+                <div class="swatch mainBlueHL"> mainBlueHL <br /> #697890</div>
+            </div>
+            <div class="col-2-3">
+                <div class="description">Color to be used as a highlight for Main Blue. Examples would be a hover effect on a navigation menu.</div> 
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col-1-3">
+                <div class="swatch byuBlue">byuBlue <br /> #1c305d</div>
+            </div>
+            <div class="col-2-3">
+                <div class="description">Color to be used for most html elements. Buttons, bullet points, headings, etc. </div>
+            </div>
+        <div class="grid">
+            <div class="col-1-3">
+                <div class="swatch byuBlueHL">byuBlueHL <br /> #3e5d90</div>
+            </div>
+            <div class="col-2-3">
+                <div class="description">Highlight color for BYU blue. Hover effects for buttons, links, etc. Can on occasion be used as a secondary blue.</div>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col-1-3">
+                <div class="swatch mainGrey">mainGrey <br /> #757474</div>
+            </div>
+            <div class="col-2-3">
+                <div class="description">Primary Grey to be used. Secondary Navigation, Buttons, Drop Down Menus, and other interactive elements are all examples. 
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col-1-3">
+                <div class="swatch mainGreyHL">mainGreyHL <br /> #b3b1aa</div>
+            </div>
+            <div class="col-2-3">
+                <div class="description">Color to be used as a highlight for Main Grey. Examples would be a hover effect for buttons or other interactive elements.</div>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col-1-3">
+                <div class="swatch creme">creme <br /> #f6f3ea</div>
+            </div>
+            <div class="col-2-3">
+                <div class="description">Color for backrounds. </div>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col-1-3">
+                <div class="swatch disabledGrey">disabledGrey <br /> #cac9c9</div>
+            </div>
+            <div class="col-2-3">
+                <div class="description">Color for normally interactive elements that are currently disabled. Can be used very judiciously for some text elements. NEVER for anything interactive. Because that would be confusing. And you dont. Want. That.</div>
+            </div>
+        </div>
         <br />
-        <button class="mainBtn">mainBtn</button>
-        <button class="secondaryBtn">secondaryBtn</button>
+                <button class="mainBtn">mainBtn</button> <p> Main Button to be used, particularly when prompting user to act. Example would be an OK, or NEXT button. </p>
+                <button class="secondaryBtn">secondaryBtn</button><p> Secondary button. For less important calls to action. Examples would be CANCEL or BACK.</p>
+                <button class="greenBtn">greenBtn</button><p>Button to be used sparingly for significant calls to action. Examples would be SAVE and CREATE.</p>
+                <button class="redBtn">redBtn</button><p>Button to be used sparingly for significant calls to action that should also denote some kind of warning. Paricuarly DELETE or EXIT buttons when progress would be lost.</p>
+                <button class="disabledBtn">disabledBtn</button> <p>Button to ONLY BE USED when normally active buttons are, for whatever reason, innactive or non usable. NEVER to be used for elements that are actively interactive.</p>       
+    </div>
     </body>
     

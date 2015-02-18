@@ -1,0 +1,76 @@
+@charset "utf-8";
+@import "colors.scss";
+/* CSS Document */
+
+/* color sample */
+
+body {
+    font-family: sans-serif;
+    color:#555;
+}
+
+
+.swatch {
+    padding: 1em;
+    height: 2em;
+    color: #fff;
+    width:10em;
+}
+
+.mainBlue {
+    background-color: $mainBlue;
+ }
+
+.mainBlueHL {
+    background-color: $mainBlueHL;
+}
+
+.byuBlue {
+    background-color: $byuBlue;
+}
+
+.byuBlueHL {
+    background-color: $byuBlueHL;
+}
+
+.mainGrey {
+    background-color: $mainGrey;
+}
+
+.mainGreyHL {
+    background-color: $mainGreyHL;
+}
+
+.secondaryGrey {
+    background-color: $secondaryGrey;
+}
+
+.creme {
+    background-color: $creme;
+    color: #555;
+}
+
+button {
+    padding:1em;
+    border:0;
+    border-radius:.5em;
+    color: $white;
+    font-size: 1em;
+    transition-background: all 1s;
+}
+
+.mainBtn {
+    background: $gradDark;
+}
+
+.mainBtn:hover {
+    background: $mainBlueHL;
+}
+
+.secondaryBtn {
+    background-color: $mainGrey;
+}
+
+.secondaryBtn:hover {
+    background-color: $mainGreyHL;
+}
