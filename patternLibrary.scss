@@ -4,11 +4,26 @@
 
 /* color sample */
 
+/* basic elements */
 body {
     font-family: sans-serif;
     color:#555;
+    margin:1em;
 }
 
+h1 {
+    color: $byuBlue;
+    font-weight: bold;
+}
+
+h2 {
+    color: $byuBlueHL;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: $mainGrey;
+}
 
 .swatch {
     padding: 1em;
@@ -55,7 +70,10 @@ body {
     color: #555;
 }
 
+/* Button Styles */
+
 button {
+    margin:.5em 0;
     padding:1em;
     border:0;
     border-radius:.5em;
@@ -65,7 +83,7 @@ button {
 }
 
 button:hover {
-    box-shadow: inset 0 0 15px #444;
+    box-shadow: inset 0 0 15px rgba(10, 10, 10, .8);
     cursor: pointer; 
 }
 .mainBtn {
@@ -73,7 +91,7 @@ button:hover {
 }
 
 .mainBtn:hover {
-    background: $mainBlueHL;
+    background: $byuBlueHL;
 }
 
 .secondaryBtn {
@@ -81,7 +99,7 @@ button:hover {
 }
 
 .secondaryBtn:hover {
-    background: $mainGreyHL;
+    background: $mainGrey;
 }
 
 .greenBtn {
@@ -89,15 +107,18 @@ button:hover {
 }
 
 .greenBtn:hover {
-    background: $greenHL;
+    background: $green;
 }
 
 .redBtn {
     background: $gradRed;
 }
 
+.modalWindow .redBtn:before {
+    content: "close";
+}
 .redBtn:hover {
-    background: $redHL;
+    background: $red;
 }
 
 .disabledBtn {
@@ -108,3 +129,105 @@ button.disabledBtn:hover {
     box-shadow: none;
     cursor: default;
 }
+
+.closeBtn {
+    border: 0;
+    border-radius: 50%;
+    background: $red;
+    width: 3em;
+    font-weight: bold;
+    font-size:.85em;
+    }
+
+.closeBtn:before {
+    content: "X";
+}
+
+/* Modal Window Elements */ 
+
+.modalWindow {
+    box-shadow: 1em 1em 1em rgba(100, 100, 100, .8);
+    position: fixed;
+    left: 30%;
+    width: 40%;
+    top:40%;
+    z-index: 2;
+    background-color: rgba(250, 250, 250, .8);
+    border: 0;
+    border-radius: .5em;
+}
+.modalWindow header {
+    color: #fff;
+    background-color: $mainBlue;
+    font-size: 1.3em;
+    padding: .5em;
+    text-align: center;
+    border: 0; 
+    border-radius: .4em .4em 0 0;
+}
+
+.modalWindow p, .modalWindow button {
+    margin: .5em 1em;
+}
+
+.modalWindow .modalClose {
+    position: absolute;
+    right: 0;
+    top:0;
+    color: white;
+    background: $mainBlue;
+    margin: 0;
+    border-radius: 0 .4em 0 0;
+    padding: .3em .7em .4em .7em;
+}
+
+.modalWindow .modalClose:hover {
+    cursor: pointer;
+    background: $mainBlueHL;
+}
+
+.modalWindow .modalClose:before {
+    content: "x";
+}
+
+.modalWindow img {
+    width: 100%;
+}
+
+.modalContent {
+    display: none;
+}
+/* Table Elements */
+
+table, th, tr{
+    border-collapse: collapse;
+    background: $creme;
+    padding: 1em;
+    border: $mainBlue;
+    margin:1em;
+}
+
+td {
+    padding: 1em;
+    transition: background .5s;
+}
+
+th {
+    background: $byuBlue;
+    color: white;
+    transition: background .5s;
+}
+
+th:hover {
+    background: $byuBlueHL;
+}
+
+table tr:nth-child(odd) {
+    background: white;
+}
+
+td:hover {
+    background: $byuBlueHL;
+    color: white;
+}
+

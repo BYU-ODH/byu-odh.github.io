@@ -4,9 +4,22 @@
 
 /* CSS Document */
 /* color sample */
+/* basic elements */
 body {
   font-family: sans-serif;
-  color: #555; }
+  color: #555;
+  margin: 1em; }
+
+h1 {
+  color: #1c305d;
+  font-weight: bold; }
+
+h2 {
+  color: #3e5d90; }
+
+h3 {
+  text-transform: uppercase;
+  color: #757474; }
 
 .swatch {
   padding: 1em;
@@ -43,7 +56,9 @@ body {
   background-color: #f6f3ea;
   color: #555; }
 
+/* Button Styles */
 button {
+  margin: .5em 0;
   padding: 1em;
   border: 0;
   border-radius: .5em;
@@ -52,32 +67,35 @@ button {
   transition-background: all 1s; }
 
 button:hover {
-  box-shadow: inset 0 0 15px #444;
+  box-shadow: inset 0 0 15px rgba(10, 10, 10, 0.8);
   cursor: pointer; }
 
 .mainBtn {
   background: linear-gradient(#3e5d90, #1e2a44, #3e5d90); }
 
 .mainBtn:hover {
-  background: #697890; }
+  background: #3e5d90; }
 
 .secondaryBtn {
   background: linear-gradient(#b3b1aa, #757474, #b3b1aa); }
 
 .secondaryBtn:hover {
-  background: #b3b1aa; }
+  background: #757474; }
 
 .greenBtn {
   background: linear-gradient(#caeba9, #7acc29, #caeba9); }
 
 .greenBtn:hover {
-  background: #a2db69; }
+  background: #7acc29; }
 
 .redBtn {
   background: linear-gradient(#cf7c7d, #af2527, #cf7c7d); }
 
+.modalWindow .redBtn:before {
+  content: "close"; }
+
 .redBtn:hover {
-  background: #bf5152; }
+  background: #af2527; }
 
 .disabledBtn {
   background-color: #cac9c9; }
@@ -85,5 +103,90 @@ button:hover {
 button.disabledBtn:hover {
   box-shadow: none;
   cursor: default; }
+
+.closeBtn {
+  border: 0;
+  border-radius: 50%;
+  background: #af2527;
+  width: 3em;
+  font-weight: bold;
+  font-size: .85em; }
+
+.closeBtn:before {
+  content: "X"; }
+
+/* Modal Window Elements */
+.modalWindow {
+  box-shadow: 1em 1em 1em rgba(100, 100, 100, 0.8);
+  position: fixed;
+  left: 30%;
+  width: 40%;
+  top: 40%;
+  z-index: 2;
+  background-color: rgba(250, 250, 250, 0.8);
+  border: 0;
+  border-radius: .5em; }
+
+.modalWindow header {
+  color: #fff;
+  background-color: #1e2a44;
+  font-size: 1.3em;
+  padding: .5em;
+  text-align: center;
+  border: 0;
+  border-radius: .4em .4em 0 0; }
+
+.modalWindow p, .modalWindow button {
+  margin: .5em 1em; }
+
+.modalWindow .modalClose {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+  background: #1e2a44;
+  margin: 0;
+  border-radius: 0 .4em 0 0;
+  padding: .3em .7em .4em .7em; }
+
+.modalWindow .modalClose:hover {
+  cursor: pointer;
+  background: #697890; }
+
+.modalWindow .modalClose:before {
+  content: "x"; }
+
+.modalWindow img {
+  width: 100%; }
+
+.modalContent {
+  display: none; }
+
+/* Table Elements */
+table, th, tr {
+  border-collapse: collapse;
+  background: #f6f3ea;
+  padding: 1em;
+  border: #1e2a44;
+  margin: 1em; }
+
+td {
+  padding: 1em;
+  transition: background .5s; }
+
+th {
+  background: #1c305d;
+  color: white;
+  transition: background .5s; }
+
+th:hover {
+  background: #3e5d90; }
+
+table tr:nth-child(odd) {
+  background: white; }
+
+td:hover {
+  background: #3e5d90;
+  color: white; }
 
 /*# sourceMappingURL=patternLibrary.css.map */
