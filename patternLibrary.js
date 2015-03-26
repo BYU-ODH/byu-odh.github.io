@@ -1,9 +1,12 @@
 window.patternlibrary = {
 
-	displayModal: function (element, type, success, close) {
+	displayModal: function (element) {
 		var modal = document.createElement ("div");
 		modal.classList.add ("modalWindow");
 		modal.innerHTML = element.innerHTML;
+		var dropDown = document.createElement ("div");
+		dropDown.classList.add ("modalBackground");
+		document.body.appendChild (div);
 		document.body.appendChild (modal);
 		var header = modal.getElementsByTagName ("header") [0];
 		var modalClose = document.createElement ("button");
@@ -13,12 +16,13 @@ window.patternlibrary = {
 
 		function closeModal ()  {
 			modal.parentNode.removeChild (modal);
-		}		
-	}
-}
-window.patternlibrary = {
+			modalBackground.parentNode.removeChild (modalBackground);
+		}	
+		return closeModal;	
+	},
 	displayDropDown: function () {
 		var dropDown = document.createElement ("div");
 		dropDown.classList.add ("dropDown");
 		dropDown.innerHTML = element.innerHTML;
 	}
+}
