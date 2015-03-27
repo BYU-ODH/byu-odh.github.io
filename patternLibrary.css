@@ -10,6 +10,9 @@ body {
   color: #555;
   margin: 1em; }
 
+body.blur > *:not(.modalWindow) {
+  -webkit-filter: blur(0.5em); }
+
 h1 {
   color: #1c305d;
   font-weight: bold; }
@@ -29,7 +32,8 @@ h3 {
   display: inline-table; }
 
 .description {
-  padding: .5em; }
+  padding: .5em;
+  height: 4em; }
 
 .mainBlue {
   background-color: #1e2a44; }
@@ -116,6 +120,12 @@ button.disabledBtn:hover {
   content: "X"; }
 
 /* Modal Window Elements */
+div.modalBackground {
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(5px);
+  filter: blur(5px); }
+
 .modalWindow {
   box-shadow: 1em 1em 1em rgba(100, 100, 100, 0.8);
   position: fixed;
@@ -148,7 +158,7 @@ button.disabledBtn:hover {
   background: #1e2a44;
   margin: 0;
   border-radius: 0 .4em 0 0;
-  padding: .3em .7em .4em .7em; }
+  padding: .65em 1em; }
 
 .modalWindow .modalClose:hover {
   cursor: pointer;
@@ -162,6 +172,12 @@ button.disabledBtn:hover {
 
 .modalContent {
   display: none; }
+
+.modalBackground {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0; }
 
 /* Table Elements */
 table, th, tr {

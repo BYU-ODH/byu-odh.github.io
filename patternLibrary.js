@@ -4,9 +4,10 @@ window.patternlibrary = {
 		var modal = document.createElement ("div");
 		modal.classList.add ("modalWindow");
 		modal.innerHTML = element.innerHTML;
-		var dropDown = document.createElement ("div");
-		dropDown.classList.add ("modalBackground");
-		document.body.appendChild (div);
+		var modalBackground = document.createElement ("div");
+		modalBackground.classList.add ("modalBackground");
+		document.body.classList.toggle ("blur");
+		document.body.appendChild (modalBackground);
 		document.body.appendChild (modal);
 		var header = modal.getElementsByTagName ("header") [0];
 		var modalClose = document.createElement ("button");
@@ -17,6 +18,7 @@ window.patternlibrary = {
 		function closeModal ()  {
 			modal.parentNode.removeChild (modal);
 			modalBackground.parentNode.removeChild (modalBackground);
+			document.body.classList.toggle ("blur");
 		}	
 		return closeModal;	
 	},
