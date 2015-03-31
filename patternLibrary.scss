@@ -158,15 +158,19 @@ div.modalBackground{
 .modalWindow {
     box-shadow: 1em 1em 1em rgba(100, 100, 100, .8);
     position: fixed;
-    left: 30%;
-    width: 40%;
+    left: 25%;
+    width: 50%;
     top:30%;
-    height:40%;
+    height:auto;
+    min-height: 25%;
+    max-height: 40%;
     z-index: 2;
     background-color: rgba(250, 250, 250, .8);
     border: 0;
     border-radius: .5em;
+    overflow: auto;
 }
+
 .modalWindow header {
     color: #fff;
     background-color: $mainBlue;
@@ -207,6 +211,7 @@ div.modalBackground{
 
 .modalContent {
     display: none;
+    padding: 1em;
 }
 
 .modalBackground {
@@ -215,6 +220,45 @@ div.modalBackground{
     position: fixed;
     top:0;
 }
+
+/* Drop Down */
+ul#dropDown {
+    height: 0;
+    transition: height 1s;
+    visibility: hidden;
+}
+ul#dropDown.showMe {
+    height: 10em;
+    visibility: visible;
+    list-style: none;
+    background-color: rgba(250, 250, 250, .8);
+    width: 30%;
+    border: 0;
+    border-radius: .5em;
+    box-shadow: .5em .5em 15px rgba(100, 100, 100, .8);
+    padding: 0;
+    position: absolute;
+    z-index: 3;
+}
+
+ul#dropDown.showMe li {
+    padding: .5em 1em;
+}
+
+ul#dropDown.showMe li:first-child {
+    border: 0;
+    border-radius: .5em .5em 0em 0em;
+}
+
+ul#dropDown.showMe li:last-child {
+    border: 0;
+    border-radius: 0em 0em .5em .5em;
+    }
+
+ul#dropDown.showMe li:hover {
+ background-color: $byuBlueHL;
+ color: white;
+ }
 
 /* Table Elements */
 
