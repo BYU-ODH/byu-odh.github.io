@@ -8,7 +8,6 @@
 body {
     font-family: sans-serif;
     color:#555;
-    margin:1em;
 }
 body.blur > *:not(.modalWindow) {
     -webkit-filter: blur(.5em);
