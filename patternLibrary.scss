@@ -75,7 +75,7 @@ h3 {
 
 /* Button Styles */
 
-button {
+button, input[type=button], input[type=submit] {
     margin:.5em 0;
     padding:1em;
     border:0;
@@ -83,11 +83,14 @@ button {
     color: $white;
     font-size: .8em;
     transition-background: all 1s;
-}
-
-button:hover {
-    box-shadow: inset 0 0 15px rgba(10, 10, 10, .8);
-    cursor: pointer; 
+    &:hover {
+        box-shadow: inset 0 0 15px rgba(10, 10, 10, .8);
+        cursor: pointer; 
+    }
+    &.disabledBtn:hover {
+        box-shadow: none;
+        cursor: default;
+    }
 }
 .mainBtn {
     background: $gradBlue;
@@ -126,11 +129,6 @@ button:hover {
 
 .disabledBtn {
     background-color: $disabledGrey;
-}
-
-button.disabledBtn:hover {
-    box-shadow: none;
-    cursor: default;
 }
 
 .closeBtn {
