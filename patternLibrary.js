@@ -3,7 +3,14 @@ window.patternlibrary = {
 	displayModal: function (element) {
 		var modal = document.createElement ("div");
 		modal.classList.add ("modalWindow");
-		modal.appendChild(element.cloneNode(true));
+
+		if(element.innerHTML === undefined) { // support for document fragments
+			modal.appendChild(element.cloneNode(true));
+		}
+		else
+		{ // supports passing in container elements (<div><header></header>blah blah</div>)
+			modal.innerHTML = element.innerHTML;
+		}
 		var modalBackground = document.createElement ("div");
 		modalBackground.classList.add ("modalBackground");
 		document.body.classList.toggle ("blur");
