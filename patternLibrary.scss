@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import "colors.scss";
+
 /* CSS Document */
 
 /* color sample */
@@ -87,13 +88,13 @@ button, input[type=button], input[type=submit] {
         box-shadow: inset 0 0 15px rgba(10, 10, 10, .8);
         cursor: pointer; 
     }
-    &.disabledBtn:hover {
+    &[disabled] {
+      @extend .disabledBtn;
+    }
+    &[disabled]:hover, &.disabledBtn:hover {
         box-shadow: none;
         cursor: default;
     }
-}
-input[disabled], button[disabled] {
-    .disabledBtn;
 }
 .mainBtn {
     background: $gradBlue;
@@ -131,7 +132,7 @@ input[disabled], button[disabled] {
 }
 
 .disabledBtn {
-    background-color: $disabledGrey;
+    background: $disabledGrey !important;
 }
 
 .closeBtn {
@@ -300,4 +301,3 @@ td:hover {
     background: $byuBlueHL;
     color: white;
 }
-
