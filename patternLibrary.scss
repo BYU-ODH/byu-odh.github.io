@@ -87,13 +87,13 @@ button, input[type=button], input[type=submit] {
         box-shadow: inset 0 0 15px rgba(10, 10, 10, .8);
         cursor: pointer; 
     }
-    &[disabled] {
-        .disabledBtn;
-    }
-    &[disabled], &.disabledBtn:hover {
+    &.disabledBtn:hover {
         box-shadow: none;
         cursor: default;
     }
+}
+input[disabled], button[disabled] {
+    .disabledBtn;
 }
 .mainBtn {
     background: $gradBlue;
