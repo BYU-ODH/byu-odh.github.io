@@ -176,7 +176,7 @@ div.modalBackground{
 }
 
 .modalWindow header {
- 
+    left: calc(27.5% + 0.75em);
     color: #fff;
     background-color: $mainBlue;
     font-size: 1.3em;
@@ -185,7 +185,7 @@ div.modalBackground{
     border: 0; 
     border-radius: .4em .4em 0 0;
     position:fixed;
-    width: 45%;
+    width: calc(45% + 0.52em);
     margin: -2.3em -.75em;
 }
 
